@@ -1,0 +1,18 @@
+PS C:\Users\danki\Desktop\git_challenge> git init
+Initialized empty Git repository in C:/Users/danki/Desktop/git_challenge/.git/
+PS C:\Users\danki\Desktop\git_challenge> echo "Hello, World!" > hello_world.txt
+PS C:\Users\danki\Desktop\git_challenge> echo "This is the first change." >> hello.world.txt
+PS C:\Users\danki\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\danki\Desktop\git_challenge> git commit -m "Added first change" 
+[main (root-commit) f35428c] Added first change
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\danki\Desktop\git_challenge> echo "This is the second change." >> hello_world.txt
+PS C:\Users\danki\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\danki\Desktop\git_challenge> git commit -m "Added second change"
+[main 07e74ed] Added second change
+ 1 file changed, 1 insertion(+)
+PS C:\Users\danki\Desktop\git_challenge> git log --oneline
+07e74ed (HEAD -> main) Added second change
+f35428c Added first change
+PS C:\Users\danki\Desktop\git_challenge> mkdir ../kadai_005
